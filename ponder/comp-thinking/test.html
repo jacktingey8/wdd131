@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="choice">
+        <option value="">-- Select an Option --</option>
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+
+    </select>
+
+    <script>
+       let stylechoice = document.querySelector('#choice')
+        stylechoice.addEventListener('change', backgroundChange)
+        
+        function backgroundChange() {
+            let choice = stylechoice.value
+            if (choice === 'option1'){
+                document.body.style.backgroundColor = 'red'}
+            else if (choice === 'option2'){
+                document.body.style.backgroundColor = 'blue'}
+            else if (choice === 'option3'){
+                document.body.style.backgroundColor = 'green'}
+            else {
+                document.body.style.backgroundColor = 'white'
+            }
+            }
+
+        
+           
+    </script>
+</body>
+</html>
