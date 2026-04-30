@@ -9,11 +9,13 @@ function theme() {
         document.body.style.color = 'white';
         document.querySelector('img').src = 'byui-logo-white.png';
         document.getElementById('info').style.border = '1px solid white';
+        document.querySelector('h2').style.color = 'lightblue';
     } 
     else {
         document.body.style.backgroundColor = 'white';
         document.body.style.color = 'black';
         document.querySelector('img').src = 'byui-logo-blue.webp';
         document.getElementById('info').style.border = '1px solid black';
+        document.querySelector('h2').style.color = 'darkblue';
     }
 }
