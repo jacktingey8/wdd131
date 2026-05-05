@@ -45,14 +45,31 @@ nav a:hover {
 footer {
     text-align: center;
 }
+main{background-color: lightcoral;}
 @media screen and (min-width: 1050px){
 main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    background-color: lightblue;}
+    nav a {
+        display: inline-block;
+    }
+.menu-btn {
+    display: none;}
+
 }
-}
+
+
 
 @media screen and (min-width:600px) and (max-width: 1049px){
     main{display: grid;
-    grid-template-columns: 1fr 1fr;}
+    grid-template-columns: 1fr 1fr;
+    background-color: lightgreen;
+}
+nav a {
+        display: inline-block;
+    }
+.menu-btn {
+    display: none;}
+    
 }
