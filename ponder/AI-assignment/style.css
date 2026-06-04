@@ -1,0 +1,195 @@
+/* ==========================================================================
+   DESIGN SYSTEM & VARIABLES (Spring Commit Theme)
+   ========================================================================== */
+:root {
+    --bg-color: #f2f9f6;          /* Light Mint Tint background */
+    --card-bg: #ffffff;           /* Crisp White cards */
+    --text-main: #1e2925;         /* Deep Slate Forest for text */
+    --text-muted: #60726a;        /* Sage Gray for subtitles/metadata */
+    --accent: #10b981;            /* Vibrant Eucalyptus Green for links/buttons */
+    --accent-hover: #059669;      /* Darker Green for hover states */
+    --border-color: #e2ece8;      /* Soft tint border to bind elements */
+    --shadow: 0 4px 12px rgba(30, 41, 37, 0.04); /* Subtle cloud-like shadow */
+}
+
+/* ==========================================================================
+   RESET & BASE LAYOUT
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+.main-content {
+    max-width: 800px; 
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Image/Visual Placeholders */
+.image-placeholder {
+    border: 2px dashed var(--text-muted);
+    background-color: var(--bg-color);
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.logo-box {
+    width: 120px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+.profile-box {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Smooth circular avatar */
+}
+
+/* Elegant Section Dividers */
+.section-divider {
+    border: 0;
+    border-top: 1px solid var(--border-color);
+    margin: 60px 0;
+}
+
+/* ==========================================================================
+   CENTERED NAVIGATION BAR
+   ========================================================================== */
+.navbar {
+    width: 100%;
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    background-color: var(--card-bg);
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+}
+
+.nav-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-muted);
+    margin: 0 15px;
+    padding-bottom: 5px;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: var(--text-main);
+}
+
+.nav-links .active-link {
+    border-bottom: 2px solid var(--accent);
+    color: var(--accent);
+    font-weight: 600;
+}
+
+/* ==========================================================================
+   GLOBAL SUBPAGE INTROS
+   ========================================================================== */
+.page-header {
+    text-align: center;
+    padding: 50px 0 20px 0;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    color: var(--text-main);
+    margin-bottom: 10px;
+}
+
+.page-header p {
+    color: var(--text-muted);
+}
+
+/* ==========================================================================
+   INTERACTIVE BUTTONS
+   ========================================================================== */
+.wireframe-button {
+    border: 2px solid var(--accent);
+    background-color: transparent;
+    color: var(--accent);
+    padding: 10px 24px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.wireframe-button:hover {
+    background-color: var(--accent);
+    color: var(--card-bg);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(16, 185, 129, 0.2);
+}
+
+.wireframe-button:active {
+    transform: translateY(0);
+}
+
+.btn-small {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+}
+
+/* ==========================================================================
+   HOMEPAGE SPECIFIC STYLES
+   ========================================================================== */
+.hero-section {
+    padding: 60px 0 20px 0;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero-text h1 {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    color: var(--text-main);
+}
+
+.hero-text p {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    margin-bottom: 30px;
+}
