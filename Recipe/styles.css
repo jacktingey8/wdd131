@@ -31,9 +31,13 @@ hr{color:grey; height:2px;margin-bottom:20px;}
     border:none;
 }
 
+#searchBar{width:100%;}
+
 #search-logo{
     width:20px;
 }
+
+
 
 .card{
     padding:30px;
@@ -55,9 +59,20 @@ hr{color:grey; height:2px;margin-bottom:20px;}
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+
+.tags-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;    
+    margin-bottom: 15px;
+}
+
+
 .type{background-color: rgb(228, 228, 228);
 border: 1px solid black;
-width:50px;
+gap:10px;
+max-width: 100px;
 }
 
 .desc{
@@ -99,3 +114,4 @@ footer{
     }
     
 }
+
