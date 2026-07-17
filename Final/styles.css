@@ -1,5 +1,6 @@
 body{
     background-color: #000000;
+    font-family: courier, monospace;
 }
 
 #container{
@@ -20,7 +21,7 @@ body{
 .orb{
     height: 200px;
     width: 200px;
-    background-image: url(media/spiral.gif);
+    /* background-image: url(media/spiral.gif); */
     background-size: cover; 
     background-position: center; 
     border-radius: 50%;
@@ -29,6 +30,41 @@ body{
 }
 
 
+#text{
+display: none;
+background-color: black;
+color: white;
+border: 1px solid white;
+padding: 10px;
+gap: 10px;
+max-width: 50%;;
+text-align: center;
+}
+
+
 #fateButton{
 display: flex;
+background-color: black;
+color: white;
+border: 1px solid white;
+padding: 10px;
+gap: 10px;
+  font-family: courier, monospace;
+}
+
+h1{
+background-color: black;
+color: white;
+padding: 10px;
+gap: 10px;
+}
+
+#instructions{
+
+background-color: black;
+color: white;
+padding: 10px;
+gap: 10px; 
+max-width: 40%;
+text-align: center;
 }
