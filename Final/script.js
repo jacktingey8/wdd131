@@ -147,14 +147,12 @@ function fadeIn(element, duration) {
     );
 }
 
-
+const backgrounds = fates.map(fate => fate.background);
 
 function flashBackground() {
     if (faterolled) {
         return; 
     }
-
-    const backgrounds = fates.map(fate => fate.background);
 
     const randomBackground = backgrounds[Math.floor(Math.random() * backgrounds.length)];
 
