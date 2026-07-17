@@ -11,7 +11,7 @@ let messageIndex = 0;
 let randomFate = null;
 let faterolled = false;
 
-const fates = [
+let fates = [
 
     {
         message:["11/20/2063", "Tens of Thousands of feet in the air", "A variable exponentially decreasing","Every passenger died", "But amoung the commotion of your final moments","You are glad that you never made it to your destination"],
@@ -92,8 +92,6 @@ text.textContent = randomFate.message[messageIndex];
 fateButton.style.display = "none";
 
 
-
-
 if (currentAudio) {
     currentAudio.pause();
     currentAudio.currentTime = 0; 
@@ -105,6 +103,7 @@ currentAudio.loop = true;
 currentAudio.play();
 
 console.log("clicked");
+
 
 })
 
@@ -150,15 +149,18 @@ function fadeIn(element, duration) {
 
 
 
-function flashBackground(){
+function flashBackground() {
     if (faterolled) {
-        return;
+        return; 
     }
-let random = fates[Math.floor(Math.random() * fates.length)];
-orb.style.backgroundImage = `url(${random.background})`;
-console.log(random.background);
-}
 
+    const backgrounds = fates.map(fate => fate.background);
+
+    const randomBackground = backgrounds[Math.floor(Math.random() * backgrounds.length)];
+
+    orb.style.backgroundImage = `url(${randomBackground})`;
+    console.log("Flashing background:", randomBackground);
+}
 
 setInterval(flashBackground, 1000);  
 
